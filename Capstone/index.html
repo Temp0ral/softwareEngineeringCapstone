@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blackjack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Blackjack</h1>
+
+  <!-- Deal -->
+  <section id="deal-section">
+    <button id="deal-btn">Deal</button>
+  </section>
+
+  <!-- Dealer Hand -->
+  <section id="dealer-section">
+    <h2>Dealer <span id="dealer-score"></span></h2>
+    <div id="dealer-cards"></div>
+  </section>
+
+  <!-- Player Hand -->
+  <section id="player-section">
+    <h2>Player <span id="player-score"></span></h2>
+    <div id="player-cards"></div>
+  </section>
+
+  <!-- Action Buttons -->
+  <section id="action-section">
+    <button id="hit-btn" disabled>Hit</button>
+    <button id="stand-btn" disabled>Stand</button>
+    <button id="double-btn" disabled>Double Down</button>
+  </section>
+
+  <!-- Result Message -->
+  <section id="result-section">
+    <p id="result-message"></p>
+  </section>
+
+  <hr />
+
+  <!-- Hi-Lo Count (not yet wired up) -->
+  <section id="count-section">
+    <h3>Hi-Lo Count</h3>
+    <p>Running Count: <span id="running-count">0</span></p>
+    <p>True Count: <span id="true-count">0.00</span></p>
+  </section>
+
+  <script src="logic.js"></script>
+</body>
+</html>
